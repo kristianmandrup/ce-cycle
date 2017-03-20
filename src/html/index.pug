@@ -1,0 +1,14 @@
+doctype html
+html
+	head
+		link(rel='stylesheet' href='./furtive.css')
+	body
+		div#root!= ssr
+		div#ce
+		ul
+			li#about(href='/about')
+			li#home(href='/home')
+		hello-world#ce-static
+		script(src!= lib)
+		script(src='ce.js')
+
