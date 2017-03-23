@@ -16,9 +16,14 @@ import {
 export default ({
 	DOM
 }) => {
-	let height$ = Input(DOM.select('#Height'))
+	let height = DOM.select('#Height')
+	let weight = DOM.select('#Weight')
+
+	console.log(height, weight)
+
+	let height$ = Input(height)
 		.startWith('177'),
-		weight$ = Input(DOM.select('#Weight'))
+		weight$ = Input(weight)
 		.startWith('62');
 
 	let bmi$ = $.combineLatest(

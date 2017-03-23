@@ -1,18 +1,28 @@
 /* global CLIENT */
-import { run } from '@cycle/core';
-import { makeDOMDriver, makeHTMLDriver } from '@cycle/dom';
-import { rerunner, restartable } from 'cycle-restart';
+import {
+	run
+} from '@cycle/run';
+import {
+	makeDOMDriver,
+	makeHTMLDriver
+} from '@cycle/dom';
+import {
+	rerunner,
+	restartable
+} from 'cycle-restart';
 
 let main = require('./aboutmain').default;
 
 export default () =>
-	run(main, {
-		DOM: makeHTMLDriver()
-	});
+run(main, {
+	DOM: makeHTMLDriver()
+});
 
 if (CLIENT) {
 	let drivers = {
-		DOM: restartable(makeDOMDriver('#root'), { pauseSinksWhileReplaying: false })
+		DOM: restartable(makeDOMDriver('#root'), {
+			pauseSinksWhileReplaying: false
+		})
 	};
 
 	let rerun = rerunner(run);

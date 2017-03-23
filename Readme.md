@@ -51,6 +51,17 @@ Make sure to add the babel plugins to your devDependencies:
 
 Currently having an [issue](https://github.com/github/babel-plugin-transform-custom-element-classes/issues/5) getting the Babel transform to work properly!
 
+[Babel issue discussion](https://github.com/babel/babel/issues/4480)
+
+## Other Attempts
+
+- [document-register-element](https://github.com/WebReflection/document-register-element)
+- [decorator-for-custom-elements](https://duske.me/javascript-decorator-for-custom-elements/)
+
+Turns out the issues were simply caused by optimistically trying to upgrade the `cyc` base template to use later versions of Cycle etc.
+
+It should work just fine on a fresh template start!
+
 ## License
 
 MIT Kristian Mandrup

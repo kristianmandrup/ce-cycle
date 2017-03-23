@@ -1,4 +1,4 @@
-var HTMLElement = typeof HTMLElement === 'undefined' ? function () {} : HTMLElement;
+// var HTMLElement = typeof HTMLElement === 'undefined' ? function () {} : HTMLElement;
 
 // shortcut for easier console logging
 const log = console.log.bind(console);
