@@ -34,12 +34,12 @@
     "webpack-node-externals": "^1.5.4"
   },
   "dependencies": {
-    "@cycle/dom": "^16.0.0",
+    "@cycle/dom": "^17.1.0",
     "@cycle/isolate": "^2.1.0",
     "@cycle/run": "^3.0.0",
     "@webcomponents/custom-elements": "github:webcomponents/custom-elements",
     "compression": "^1.6.2",
-    "cross-env": "^1.0.7",
+    "cross-env": "^4.0.0",
     "cycle-restart": "0.1.0",
     "document-register-element": "github:webreflection/document-register-element",
     "dynamic-require": "^6.7.10",
