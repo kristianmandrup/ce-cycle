@@ -1,5 +1,7 @@
 # Cycle.js with Custom Elements v1 experiments
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/kristianmandrup/ce-cycle.svg)](https://greenkeeper.io/)
+
 **WIP** Experimental!
 
 Demonstrating use of **Custom Elements v1** with [Cycle.js](https://cycle.js.org/) app using [virtual-dom](https://github.com/Matt-Esch/virtual-dom)
